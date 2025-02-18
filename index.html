@@ -15,14 +15,12 @@
 	<body class="is-preload">
 
 		<!-- Banner -->
-					
 		<section id="banner">
 			<div class="inner">
 				<a href="https://www.linkedin.com/in/reese-karo/" target="_blank">
 					<div class="logo">
-					<!-- LinkedIn Icon -->
-					<span class="icon brands fa-linkedin"></span>
-				</div>
+						<span class="icon brands fa-linkedin"></span>
+					</div>
 				</a>
 				<h2>Reese Karo</h2>
 				<p>Applied Mathematics & Statistics and Data Science</p>
@@ -34,56 +32,58 @@
 
 			<!-- Wrapper -->
 			<section id="wrapper">
-	
+
 				<!-- One -->
-					<section id="one" class="wrapper spotlight style1">
-						<div class="inner">
-							<a href="#" class="image"><img src="images/Reese.jpeg" alt="Reese Karo" /></a>
-							<div class="content">
-								<h2 class="major">About Me</h2>
-								<p>Hello! My name is Reese, and I am currently a senior at the University of California, Santa Barbara. I am pursuing a double major - a B.S. in Applied Mathematics and a B.S. in Statistics and Data Science. My academic interests include numerical analysis, machine learning, and understanding data of all kinds. I am very passionate about using data to make informed decisions and am always looking for new ways to apply data science to solve real-world problems.</p>
-							</div>
+				<section id="one" class="wrapper spotlight style1">
+					<div class="inner">
+						<a href="#" class="image"><img src="images/Reese.jpeg" alt="Reese Karo" /></a>
+						<div class="content">
+							<h2 class="major">About Me</h2>
+							<p>Hello! My name is Reese, and I am currently a senior at the University of California, Santa Barbara. I am pursuing a double major - a B.S. in Applied Mathematics and a B.S. in Statistics and Data Science. My academic interests include numerical analysis, machine learning, and understanding data of all kinds. I am very passionate about using data to make informed decisions and am always looking for new ways to apply data science to solve real-world problems.</p>
 						</div>
-					</section>
-	
-					<!-- Menu -->
-						<nav id="menu">
-							<div class="inner">
-								<h2>Menu</h2>
-								<ul class="links">
-									<li><a href="index.html">Home</a></li>
-									<li><a href="https://github.com/reese-karo" target="_blank">GitHub</a></li>
-									<li><a href="/images/Reese_Karo_Resume.pdf" target="_blank">Resume</a></li>
-								</ul>
-								<a href="#" class="close">Close</a>
-							</div>
-						</nav>
+					</div>
+				</section>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<div class="inner">
+						<h2>Menu</h2>
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="https://github.com/reese-karo" target="_blank">GitHub</a></li>
+							<li><a href="/images/Reese_Karo_Resume.pdf" target="_blank">Resume</a></li>
+						</ul>
+						<a href="#" class="close">Close</a>
+					</div>
+				</nav>
 
 				<!-- Wrapper -->
-					<section id="wrapper">
-						<header>
-							<div class="inner">
-								<h2>Welcome to Reese Karo's Portfolio</h2>
-								<h3>Click the button below to view my resume.</h3>
-								<a href="/images/Reese_Karo_Resume.pdf" target="_blank">View My Resume</a>
-							</div>
-						</header>
+				<section id="wrapper">
+					<header>
+						<div class="inner">
+							<h2>Welcome to My Portfolio</h2>
+							<h3>Click the button below to view my resume.</h3>
+							<a href="/images/Reese_Karo_Resume.pdf" target="_blank" class="button primary">View My Resume</a>
+						</div>
+					</header>
 
-						<section id="skills">
-							<h3 class="major">Skills</h3>
-								<ul>
-									<li>Programming Languages: Python, R, SQL</li>
-									<li>Machine Learning Frameworks: TensorFlow, Keras, Scikit-Learn</li>
-									<li>Data Analysis, Wrangling, and Visualization: Pandas, Tidyverse, NumPy, Matplotlib, Seaborn</li>
-									<li>Additional Tools: Git, Jupyter Notebooks, Tableau</li>
-								</ul>
-						</section>
+					<!-- Skills -->
+					<section id="skills" class="wrapper">
+						<div class="inner">
+							<h2 class="major">Skills</h2>
+							<ul class="alt">
+								<li><strong>Programming Languages:</strong> Python, R, SQL</li>
+								<li><strong>Machine Learning Frameworks:</strong> TensorFlow, Keras, Scikit-Learn</li>
+								<li><strong>Data Analysis, Wrangling, and Visualization:</strong> Pandas, Tidyverse, NumPy, Matplotlib, Seaborn</li>
+								<li><strong>Additional Tools:</strong> Git, Jupyter Notebooks, Tableau</li>
+							</ul>
+						</div>
+					</section>
 
 
 						<!-- Content -->
 						<div class="wrapper">
 							<div class="inner">
-
 								<h3 class="major">Experience</h3>
 
 								<!-- SLAC National Accelerator Laboratory Capstone Project -->
@@ -178,36 +178,15 @@
 							</ul>
 						</div>
 					</section>
-
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script>
-				// Add click handler for image popup
-				$('.image-popup').on('click', function(e) {
-					e.preventDefault();
-					const imgUrl = $(this).attr('href');
-					const popup = $('<div>').addClass('popup-overlay').append(
-						$('<img>').attr('src', imgUrl),
-						$('<span>').addClass('close-popup').html('×')
-					);
-					$('body').append(popup);
-					
-					// Close popup when clicking outside or on close button
-					popup.on('click', function(e) {
-						if (e.target === this || $(e.target).hasClass('close-popup')) {
-							$(this).remove();
-						}
-					});
-				});
-			</script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
