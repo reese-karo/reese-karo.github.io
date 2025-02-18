@@ -21,7 +21,9 @@
 		<!-- Header -->
 			<header id="header">
 				<div class="profile-image">
-					<img src="images/Reese.jpeg" alt="Reese Karo" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 15px;" />
+					<a href="images/Reese.jpeg" class="image-popup">
+						<img src="images/Reese.jpeg" alt="Reese Karo" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 15px; cursor: pointer;" />
+					</a>
 				</div>
 				<h1><a href="index.html">Applied Mathematics & Statistics and Data Science</a></h1>
 				<nav>
@@ -124,6 +126,26 @@
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
+			<script>
+				// Add click handler for image popup
+				$('.image-popup').on('click', function(e) {
+					e.preventDefault();
+					const imgUrl = $(this).attr('href');
+					const popup = $('<div>').addClass('popup-overlay').append(
+						$('<img>').attr('src', imgUrl),
+						$('<span>').addClass('close-popup').html('×')
+					);
+					$('body').append(popup);
+					
+					// Close popup when clicking outside or on close button
+					popup.on('click', function(e) {
+						if (e.target === this || $(e.target).hasClass('close-popup')) {
+							$(this).remove();
+						}
+					});
+				});
+			</script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
